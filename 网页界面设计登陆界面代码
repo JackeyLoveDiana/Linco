@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linco干杯[]~(￣▽￣)~*</title>
+    <!-- link指连接到某个地方读取配置文件 herf后面跟着的是你要到哪里去读取这个文件 简单来说就是读取文件的路径 -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +13,9 @@
             登录
         </h2>
         <div class="inputBox">
+            <!-- input意思为输入 type的意思是让用户输入的信息类型； text指的是文本 简单来说就是可以直接看到的文字 -->
             <input type="text" name="" required="">
+            <!-- lable指文字 -->
             <label>用户名</label>
         </div>
 
@@ -20,7 +23,8 @@
             <input type="password" name="" required="">
             <label>密码</label>
         </div>
-
+        
+        <!-- 制作登录按钮，submit是指提交 -->
         <input type="submit" name="">
 
     </div>
@@ -35,7 +39,7 @@
 
 styles.css
 body{
-    background: url(u=1018391580\,47543181&fm=26&gp=0.jpg);
+    background: url(u=3584021279\,1672109413&fm=26&gp=0.jpg);
     background-size: cover;
 }
 
@@ -45,8 +49,11 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     background: rgba(0, 0, 0,0.8);
+    /* box的宽度 */
     width: 400px;
+    /* 外框的宽度 */
     padding: 40px;
+    /* 加阴影 */
     box-shadow: 0 15px 25px;
     border-radius: 10px;
 }
@@ -56,7 +63,8 @@ body{
     text-align: center;
     margin: 0 0 30px;
 }
-
+/* 当把一个容器定义为相对位置时，
+这个容器的子容器会把这个容器当作“屏幕” */
 .box .inputBox {
     position: relative;
     margin-top: 30px;
@@ -66,6 +74,7 @@ body{
 .box .inputBox input {
     width: 100%;
     height: 30px;
+    /* */
     background: transparent;
     color: whitesmoke;
     font-size: 18px;
