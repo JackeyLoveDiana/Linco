@@ -44,11 +44,13 @@
         </div>
         
         <!-- 制作登录按钮，submit是指提交 -->
-        <input type="submit" name="">
-
+        <input type="submit" name="" >
+        
+        
     </div>
 </body>
 </html>
+
 
 
 
@@ -62,9 +64,9 @@ styles.css
 /* 身体部分 */
 body{
     /* 插入图片 */
-    background: url(u=3584021279\,1672109413&fm=26&gp=0.jpg);
-    /* 将图片扩大至100% */
-    background-size: cover;
+    background: url(a695261c955c4e8dc0f0d33e0a36b32e.jpg);
+    /* 将图片扩大至85% */
+    background-size: 97%;
 }
 /* 容器 */
 .box{
@@ -77,7 +79,7 @@ body{
     /* 水平垂直居中 */
     transform: translate(-50%,-50%);
     /* 阴影部分颜色 */
-    background: rgba(0, 0, 0,0.8);
+    background: rgba(20, 113, 119, 0.8);
     /* box的宽度 */
     width: 400px;
     /* 外框的宽度 */
@@ -91,7 +93,7 @@ body{
 /* 容器字体 */
 .box h2{
     /* 字体颜色 */
-    color: white;
+    color: rgb(0, 0, 0);
     /* 字体居中 */
     text-align: center;
     /* 设置对象四边的外延边距 */
@@ -102,13 +104,16 @@ body{
 .box .inputBox {
     /* 相对定位 */
     position: relative;
-    /*  */
+    /* 上边距离 */
     margin-top: 30px;
+    /* 下外边距 */
     margin-bottom: 20px;
 }
 
 .box .inputBox input {
+    /* 宽度 */
     width: 100%;
+    /* 高度 */
     height: 30px;
     /* 去拿上层容器背景的颜色 */
     background: transparent;
@@ -124,7 +129,7 @@ body{
     outline: none;
 }
 .box .inputBox label{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     position: absolute;
     left: 0;
@@ -139,12 +144,12 @@ body{
 .box .inputBox input:valid ~ label
 {
     top: -15px;
-    color: rgb(58, 184, 206);
+    color: rgb(65, 214, 240);
     font-size: 14px;
 }
 /* 对按钮进行配置 */
 .box input[type="submit"]{
-    background: rgb(58, 184, 206);
+    background: rgb(0, 183, 255);
     border: none;
     color: whitesmoke;
     outline: none;
@@ -153,4 +158,5 @@ body{
     height: 40px;
     margin-top: 10px;
     cursor: pointer;
+    
 }
