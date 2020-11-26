@@ -1,25 +1,44 @@
+<!-- 文件类型为HTML格式文件 -->
 <!DOCTYPE html>
+<!-- HTML类型文件语言为英语 -->
 <html lang="en">
+    <!-- 头的部分 -->
 <head>
+    <!-- 规定HTML文件的字符编码 "UTF-8"为字符编码 -->
     <meta charset="UTF-8">
+    <!-- 
+        width:可视区域的宽度，值可为数字或关键词device-width
+         height:同width
+         intial-scale:页面首次被显示是可视区域的缩放级别，取值1.0则页面按实际尺寸显示，无任何缩放
+         maximum-scale=1.0, minimum-scale=1.0;可视区域的缩放级别，
+         maximum-scale用户可将页面放大的程序，1.0将禁止用户放大到实际尺寸之上。
+         user-scalable:是否可对页面进行缩放，no 禁止缩放 
+        -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 标题名称 -->
     <title>Linco干杯[]~(￣▽￣)~*</title>
     <!-- link指连接到某个地方读取配置文件 herf后面跟着的是你要到哪里去读取这个文件 简单来说就是读取文件的路径 -->
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- 身体部分 -->
 <body>
+    <!-- 标签可以把文档分割为独立的 不同的部分 它可以用作严格的组织工具 并且不使用任何格式与其关联 -->
     <div class="box">
+        <!-- 字体大小 -->
         <h2>
             登录
         </h2>
+        <!-- 同上 -->
         <div class="inputBox">
             <!-- input意思为输入 type的意思是让用户输入的信息类型； text指的是文本 简单来说就是可以直接看到的文字 -->
             <input type="text" name="" required="">
             <!-- lable指文字 -->
             <label>用户名</label>
         </div>
-
+        
+        <!-- 同上 -->
         <div class="inputBox">
+            <!-- 输入用户信息 名称 -->
             <input type="password" name="" required="">
             <label>密码</label>
         </div>
@@ -38,16 +57,26 @@
 
 
 styles.css
+
+
+/* 身体部分 */
 body{
+    /* 插入图片 */
     background: url(u=3584021279\,1672109413&fm=26&gp=0.jpg);
+    /* 将图片扩大至100% */
     background-size: cover;
 }
-
+/* 容器 */
 .box{
+    /* 绝对定位 */
     position: absolute;
+    /* 顶部距离 */
     top: 50%;
+    /* 左侧距离 */
     left: 50%;
+    /* 水平垂直居中 */
     transform: translate(-50%,-50%);
+    /* 阴影部分颜色 */
     background: rgba(0, 0, 0,0.8);
     /* box的宽度 */
     width: 400px;
@@ -55,18 +84,25 @@ body{
     padding: 40px;
     /* 加阴影 */
     box-shadow: 0 15px 25px;
+    /* 为边框设置10个像素的圆角 */
     border-radius: 10px;
 }
 
+/* 容器字体 */
 .box h2{
+    /* 字体颜色 */
     color: white;
+    /* 字体居中 */
     text-align: center;
+    /* 设置对象四边的外延边距 */
     margin: 0 0 30px;
 }
 /* 当把一个容器定义为相对位置时，
 这个容器的子容器会把这个容器当作“屏幕” */
 .box .inputBox {
+    /* 相对定位 */
     position: relative;
+    /*  */
     margin-top: 30px;
     margin-bottom: 20px;
 }
